@@ -8,24 +8,57 @@ package netcrackertree;
  *
  * @author TheRusskiy
  */
+
+
+
 public class ID {
-    long value;
+    /**
+     * value that defines "identity" of this ID
+     */
+    private long value;
+    
+    
+    /**
+     * Create new ID
+     */
     public ID()
     {
         value=0;
     }
+    
+    
+    /**
+     * Create new ID with specified identity
+     * @param value parameter of type Long
+     */
     private ID(long value)
     {
         this.value=value;
     }
-    long getValue()
+    
+    
+    /**
+     * @return value that represents identity
+     */
+    private long getValue()
     {
         return value;
     }
+    
+    
+    /**
+     * @param id ID with which current ID should be compared
+     * @return true if IDs are equal
+     */
     boolean equals(ID id)
     {
         return (this.getValue()==id.getValue());
     }
+    
+    
+    /**
+     * @return new unique ID that follows this one
+     */
     ID nextValue()
     {
         return new ID(value+1);

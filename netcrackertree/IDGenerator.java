@@ -4,16 +4,39 @@
  */
 package netcrackertree;
 
+
 /**
  *
  * @author TheRusskiy
  */
+
+/**
+ * 
+ * @author TheRusskiy
+ */
 public class IDGenerator {
-    ID currentID;
+    ID currentID;    
+    
+    
+    /**
+     * Creates new IDGenerator with "fresh" ID
+     */
+    public IDGenerator(){
+        currentID=new ID();
+    }
+    
+    
+    /**
+     * @return next ID
+     */
     ID nextID(){
         currentID=currentID.nextValue();
         return currentID;
     }   
+    
+    /**
+     * @return look at what ID this generator points
+     */
     ID currentID(){
         return currentID;
     }
