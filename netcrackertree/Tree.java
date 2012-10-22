@@ -19,8 +19,7 @@ public interface Tree{
     //List<Tree> children    
     //Tree parent
     
-    //TODO
-    //ADD EXCEPTIONS!!!
+    //TODO ADD EXCEPTIONS
     
     /**
      * @return Iterator of encapsulated children list

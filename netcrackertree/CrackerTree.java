@@ -21,7 +21,7 @@ public class CrackerTree implements Tree{
     private List<Tree> children = new LinkedList();    
     private Tree parent;
 
-    //PUBLIC???
+    //???PUBLIC
     public Tree getParent() {
         return parent;
     }
@@ -29,7 +29,7 @@ public class CrackerTree implements Tree{
     
     public CrackerTree(IDGenerator generator)
     {
-        //TODO
+        //TODO Implement
     }
     
     @Override
@@ -88,7 +88,7 @@ public class CrackerTree implements Tree{
     }
 
     
-    //Clone IDs???
+    //???Clone IDs
     @Override
     public Tree clone() {
         throw new UnsupportedOperationException("Not supported yet.");

@@ -17,7 +17,7 @@ import java.util.Iterator;
 public class TreeTests {
     public static boolean testAll()
     {
-        //TODO
+        //TODO MORE INTEGRITY TESTS
         if (!createTree()) return false;
         if (!noCircles()) return false;
         if (!addNode()) return false;
@@ -47,7 +47,7 @@ public class TreeTests {
         {
             tree.add(tree);
         }
-        //TODO
+        //TODO specific exception
         //not "just" exception, specific one
         catch(Exception e)
         {
@@ -87,7 +87,7 @@ public class TreeTests {
             tree.add(child);
             tree.add(child);
         }
-        //TODO
+        //TODO specific exception
         //not "just" exception, specific one
         catch(Exception e)
         {
@@ -119,7 +119,6 @@ public class TreeTests {
     }
 
     public static boolean cloneTree() {
-        //TODO
         IDGenerator generator = new IDGenerator();
         Tree tree1 = new CrackerTree(generator);
         Tree child1 = new CrackerTree(generator);
@@ -137,38 +136,38 @@ public class TreeTests {
             if (trit1[i]==trit2[i]) return false;
             if (trit1[i].getData()==trit2[i].getData()) return false;
             if (!trit1[i].getData().equals(trit2[i].getData())) return false;
-            //Test IDs???
+            //??? Test IDs
         }
         return true;
     }
 
     public static boolean nodeSearch() {
-        //TODO
+        //TODO Implement test
         return false;
     }
 
     public static boolean orderTree() {
-        //TODO
+        //TODO Implement test
         return false;
     }
 
     public static boolean saveTree() {
-        //TODO
+        //TODO Implement test
         return false;
     }
 
     public static boolean loadTree() {
-        //TODO
+        //TODO Implement test
         return false;
     }
 
     public static boolean multipleTree() {
-        //TODO
+        //TODO Implement test
         return false;
     }
 
     public static boolean copyAndInsertTree() {
-        //TODO
+        //TODO Implement test
         return false;
     }
     
