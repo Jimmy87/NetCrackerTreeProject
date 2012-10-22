@@ -21,6 +21,9 @@ public interface Tree{
     
     /**
      * Adds new Tree, switches @isSorted to "false"
+     * check if new Tree has the same IDGenerator,
+     * if false, then change all IDs of a new tree according
+     * to current IDGenerator
      * @param id ID of a Node to which you want to attach new Tree
      */
     void add(ID id, Tree tree);

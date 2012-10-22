@@ -9,5 +9,12 @@ package netcrackertree;
  * @author TheRusskiy
  */
 public class IDGenerator {
-    
+    ID currentID;
+    ID nextID(){
+        currentID=currentID.nextValue();
+        return currentID;
+    }   
+    ID currentID(){
+        return currentID;
+    }
 }
