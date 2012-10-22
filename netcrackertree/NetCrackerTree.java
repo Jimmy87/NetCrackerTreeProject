@@ -16,7 +16,6 @@ public class NetCrackerTree {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AbstractTree tree = new AbstractTree();
-        TreeTests.someTest(tree);
+       //TODO
     }
 }

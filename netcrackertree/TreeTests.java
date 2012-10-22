@@ -11,8 +11,16 @@ package netcrackertree;
  * @author TheRusskiy
  */
 public class TreeTests {
-    public static void someTest(AbstractTree tree)
+    public static boolean someTest(Tree tree)
     {
         //TODO
+        return true;
     }
 }
+
+
+
+
+
+
+
