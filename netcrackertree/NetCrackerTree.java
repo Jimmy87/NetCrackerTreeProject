@@ -17,5 +17,6 @@ public class NetCrackerTree {
      */
     public static void main(String[] args) {
        //TODO
+        TreeTests.testAll();
     }
 }

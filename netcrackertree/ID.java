@@ -50,7 +50,7 @@ public class ID {
      * @param id ID with which current ID should be compared
      * @return true if IDs are equal
      */
-    boolean equals(ID id)
+    public boolean equals(ID id)
     {
         return (this.getValue()==id.getValue());
     }
@@ -59,7 +59,7 @@ public class ID {
     /**
      * @return new unique ID that follows this one
      */
-    ID nextValue()
+    public ID nextValue()
     {
         return new ID(value+1);
     }

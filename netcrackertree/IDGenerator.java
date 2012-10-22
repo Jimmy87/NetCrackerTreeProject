@@ -15,7 +15,7 @@ package netcrackertree;
  * @author TheRusskiy
  */
 public class IDGenerator {
-    ID currentID;    
+    private ID currentID;    
     
     
     /**
@@ -29,7 +29,7 @@ public class IDGenerator {
     /**
      * @return next ID
      */
-    ID nextID(){
+    public ID nextID(){
         currentID=currentID.nextValue();
         return currentID;
     }   
@@ -37,7 +37,7 @@ public class IDGenerator {
     /**
      * @return look at what ID this generator points
      */
-    ID currentID(){
+    public ID currentID(){
         return currentID;
     }
 }
